@@ -1,11 +1,10 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-var colors = require('colors');
 const ytdl = require('ytdl-core');
  
 
 bot.on('ready', () => {
-	console.log(colors.magenta('Veleno has been poured in beautiful woman drink!'));
+	console.log('Veleno has been poured in beautiful woman drink!');
 	bot.user.setActivity("𝕷𝖎𝖑𝖝𝖆𝖗𝖐 bot", {
 		type: "STREAMING",
 		url: "https://www.twitch.tv/mizto_"
@@ -441,7 +440,7 @@ bot.on('message', message => {
 			if(invalidFormat != true) {
 
 				message.channel.send(":imp: Searching for `Lilxark - " + args[1] + "` lyrics...");
-				console.log(colors.green(message.author.username) + colors.white(" has searched for " + colors.green(args[1])));
+				console.log(message.author.username + " has searched for " + args[1]);
 
 				if(args[2] === '-t' || args[2] === '-translate') {
 					if(args[1] === 'Veleno' || args[1] === 'veleno' || args[1] === 'poison' || args[1] === 'Poison') {
