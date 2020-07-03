@@ -489,4 +489,4 @@ bot.on('message', message => {
 
 
  
-bot.login('NjYzODQwODQwODA4MTM2NzI1.Xo7u1w.uV-HGWgXF4DGMHyOgvVqO_YJj8w');
+bot.login(process.env.BOT_TOKEN);
